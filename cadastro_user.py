@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
 
 class biblioteca:
     def __init__(self):
-        self.conn = sqlite3.connect('biblioteca.db')
+        self.conn = sqlite3.connect('bibl/biblioteca.db')
         self.c = self.conn.cursor()
 
     def cadastrar_usuario(self, nome, email, senha, cpf):
